@@ -84,6 +84,28 @@ module.exports = {
         // Add any options here
       },
     },
+
+    /* define what is page and what is not */
+
+    {
+
+       // You can have multiple instances of this plugin
+        // to create pages from React components in different directories.
+        //
+        // The following sets up the pattern of having multiple
+        // "pages" directories in your project
+
+        // You can also overwrite the default behavior for src/pages
+        // This changes the page-creator instance used by Gatsby
+
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        //ignore styles
+        ignore: [`**/styles.js`],
+      },
+    },
+
     //use this plugin last, when using manifest
     `gatsby-plugin-offline`
   ],
