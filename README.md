@@ -71,8 +71,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-2.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
+2.  **`/config`**: Directory for the insertion of metadata and plugins that have a very long configuration.
 
 3.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
@@ -88,13 +87,28 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-10.  **`LICENSE`**: License used by Expertise Solutions.
+10. **`LICENSE`**: License used by Expertise Solutions.
 
 11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 12. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 13. **`README.md`**:A text file containing useful reference information about the project.
+
+## Plugins and gatsby-config.js
+
+1. **`siteMetadata`**: When you want to reuse common pieces of data across the site (for example, your site title), you can store that data in siteMetadata, path ./config/metadata.js.
+1. **`gatsby-plugin-react-helmet`**:Provides drop-in support for server rendering data added with React Helmet (uses react-helmet).
+1. **`gatsby-plugin-sitemap`**:Create a sitemap for your Gatsby site.
+>NOTE: This plugin only generates output when run in production mode! To test your sitemap, run: gatsby build && gatsby serve
+1. **`gatsby-plugin-nprogress`**: Automatically shows the nprogress indicator when a page is delayed in loading (which Gatsby considers as one second after clicking on a link).
+1. **`gatsby-plugin-google-analytics`**:This plugin uses Google’s analytics.js file under the hood.
+1. **`gatsby-plugin-manifest`**:The web app manifest (part of the PWA specification) enabled by this plugin allows users to add your site to their home screen on most mobile browsers — see here. The manifest provides configuration and icons to the phone.
+1. **`gatsby-plugin-styled-components`**:A Gatsby plugin for styled-components with built-in server-side rendering support.
+1. **`gatsby-plugin-page-creator`**:Gatsby plugin that automatically creates pages from React components in specified directories. Gatsby includes this plugin automatically in all sites for creating pages from components in src/pages. You can also leverage the File System Route API to programmatically create pages from your data.(You may include another instance of this plugin if you’d like to create additional “pages” directories or want to override the default usage.)
+1. **`gatsby-plugin-offline`**:Adds drop-in support for making a Gatsby site work offline and more resistant to bad network connections. It uses Workbox Build to create a service worker for the site and loads the service worker into the client. ( If you’re using this plugin with gatsby-plugin-manifest (recommended) this plugin should be listed after that plugin so the manifest file can be included in the service worker.)
+- Optional 
+    - **` gatsby-plugin-canonical-urls`**:if necessary the creation of canonical urls, an important tool for seo
 
 ## 🎓 Learning Gatsby
 
