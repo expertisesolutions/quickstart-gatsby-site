@@ -16,24 +16,26 @@ _Server Model [When possible to put the server link here](https://github.com/exp
 
 1.  **Starting to developing.**
 
-    start the project.
+    Start the project.
 
     ```shell
     >git clone https://github.com/expertisesolutions/quickstart-gatsby-site/
     ```
 
-1.  **Starting to developing.**
+2.  **Install dependencies.**
 
-    Navigate to your new website directory and install the /node_modues dependencies.
+    Navigate to your new website directory and install the /node_modues
+    dependencies.
 
     ```shell
     >cd quickstart-gatsby-site/
     >yarn install
     ```
-1.  **Starting to developing.**
+3.  **Serve your website.**
 
-    Navigate to your new website directory and install the /node_modues dependencies.
-    
+    Still on your website directory, tell yarn or gatsby to serve your website
+    locally.
+
     ```shell
     >yarn start
     ```
@@ -41,14 +43,19 @@ _Server Model [When possible to put the server link here](https://github.com/exp
     ```shell
     >gatsby develop
     ```
-    
-1.  **Open the source code and start editing!**
+
+4.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_.
+    This is a tool you can use to experiment with querying your data. Learn
+    more about using this tool in the [Gatsby
+    tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `quickstart-gatsby-site` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `quickstart-gatsby-site` directory in your code editor of choice
+    and edit `src/pages/index.js`. Save your changes and the browser will
+    update in real time!
 
 ## 🧐 What's inside?
 
@@ -56,7 +63,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
     .
     ├── node_modules
-    ├── config 
+    ├── config
     ├── src
     ├── .gitignore
     ├── .prettierrc
@@ -107,7 +114,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 1. **`gatsby-plugin-styled-components`**:A Gatsby plugin for styled-components with built-in server-side rendering support.
 1. **`gatsby-plugin-page-creator`**:Gatsby plugin that automatically creates pages from React components in specified directories. Gatsby includes this plugin automatically in all sites for creating pages from components in src/pages. You can also leverage the File System Route API to programmatically create pages from your data.(You may include another instance of this plugin if you’d like to create additional “pages” directories or want to override the default usage.)
 1. **`gatsby-plugin-offline`**:Adds drop-in support for making a Gatsby site work offline and more resistant to bad network connections. It uses Workbox Build to create a service worker for the site and loads the service worker into the client. ( If you’re using this plugin with gatsby-plugin-manifest (recommended) this plugin should be listed after that plugin so the manifest file can be included in the service worker.)
-- Optional 
+- Optional
     - **` gatsby-plugin-canonical-urls`**:if necessary the creation of canonical urls, an important tool for seo
 
 ## 🎓 Learning Gatsby
